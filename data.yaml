@@ -1,0 +1,5 @@
+train: train/images
+val: val/images
+
+nc: 1  # Número de classes
+names: ['ze']  # Nome da classe
