@@ -22,7 +22,7 @@ def draw_detections(frame, boxes, scores, classes, labels, conf_threshold=0.5):
     return frame
 
 # Carregar o modelo TFLite
-interpreter = tf.lite.Interpreter(model_path="best_float16.tflite")
+interpreter = tf.lite.Interpreter(model_path="models/best_float16.tflite")
 interpreter.allocate_tensors()
 
 # Obter detalhes das entradas e saídas do modelo
